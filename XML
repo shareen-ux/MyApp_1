@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="SampleDB">
+    <table name="users">
+        <row>
+            <id>1</id>
+            <name>Alice</name>
+            <email>alice@example.com</email>
+        </row>
+        <row>
+            <id>2</id>
+            <name>Bob</name>
+            <email>bob@example.com</email>
+        </row>
+    </table>
+    <table name="products">
+        <row>
+            <id>101</id>
+            <name>Laptop</name>
+            <price>800</price>
+        </row>
+        <row>
+            <id>102</id>
+            <name>Phone</name>
+            <price>500</price>
+        </row>
+    </table>
+</database>
