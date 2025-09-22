@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample HTML Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+        header { background: #0073e6; color: #fff; padding: 1em; text-align: center; }
+        main { padding: 2em; }
+        footer { background: #333; color: #fff; text-align: center; padding: 1em 0; position: fixed; bottom: 0; width: 100%; }
+        .button { background: #0073e6; color: #fff; padding: 0.5em 1em; border: none; border-radius: 4px; cursor: pointer; }
+        .button:hover { background: #005bb5; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Sample HTML Page</h1>
+    </header>
+    <main>
+        <h2>Hello, World!</h2>
+        <p>This is a sample HTML file. You can edit this content as you like.</p>
+        <button class="button" onclick="alert('Hello from HTML!')">Click Me</button>
+    </main>
+    <footer>
+        &copy; 2025 Your Name
+    </footer>
+</body>
+</html>
