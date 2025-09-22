@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { background: #f2f6fc; font-family: Verdana, sans-serif; margin: 0; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #aaa; padding: 2em; }
+        h2 { text-align: center; color: #0073e6; }
+        label { display: block; margin: 1em 0 0.5em; }
+        input, textarea { width: 100%; padding: 0.75em; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 1em; width: 100%; background: #0073e6; color: #fff; border: none; padding: 1em; border-radius: 4px; font-size: 1em; cursor: pointer; }
+        button:hover { background: #005bb5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form onsubmit="sendMessage(event)">
+            <label for="name">Name:</label>
+            <input id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response" style="color:green; text-align:center; margin-top:1em;"></p>
+    </div>
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+            document.getElementById('response').textContent = "Thank you! Your message has been sent.";
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
