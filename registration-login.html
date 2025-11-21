@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration & Login Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f6f6f6; }
+        .container { width: 320px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 6px; box-shadow: 0 0 10px #aaa; }
+        h2 { text-align: center; }
+        form { margin: 15px 0; }
+        label { display: block; margin: 10px 0 5px; }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%; padding: 10px; background: #007bff; color: #fff; border: none; border-radius: 4px;
+            cursor: pointer; font-size: 16px;
+        }
+        input[type="submit"]:hover { background: #0056b3; }
+        .switch { text-align: center; margin-top: 12px; }
+        .switch a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container" id="register-box">
+        <h2>Register</h2>
+        <form id="registerForm" onsubmit="return showLoginForm()">
+            <label for="regName">Name</label>
+            <input type="text" id="regName" name="regName" required>
+            <label for="regEmail">Email</label>
+            <input type="email" id="regEmail" name="regEmail" required>
+            <label for="regPassword">Password</label>
+            <input type="password" id="regPassword" name="regPassword" required>
+            <input type="submit" value="Register">
+        </form>
+        <div class="switch">
+            Already have an account? <a href="#" onclick="showLoginForm(true); return false;">Login</a>
+        </div>
+    </div>
+
+    <div class="container" id="login-box" style="display:none;">
+
